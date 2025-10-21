@@ -1,0 +1,39 @@
+# Microphone Configuration
+mic:
+  sample_rate: 16000           # Sample rate in Hz
+  block_ms: 160                # Block size in milliseconds
+  channel: 1                   # Mono = 1, Stereo = 2
+  max_queue: 10                # Maximum queue size
+  queue_timeout: 0.5           # Queue timeout in seconds
+
+# VAD (Voice Activity Detection) Configuration
+vad:
+  sample_rate: 16000
+  aggressiveness: 2            # 0-3, higher = more aggressive
+
+# ASR (Automatic Speech Recognition) Model Configuration
+asr:
+  model_name: "nemo-parakeet-tdt-0.6b-v3"
+  model_dir: "./models"        # Directory where models are stored
+
+# ASR Worker Configuration
+asr_worker:
+  sample_rate: 16000
+  window_sec: 30               # Window size in seconds
+  max_history_sec: 120         # Maximum history to keep in seconds
+  context_overlap_sec: 5       # Context overlap in seconds
+  chunk_min_sec: 0.5           # Minimum chunk duration in seconds
+  chunk_max_sec: 5             # Maximum chunk duration in seconds
+  partial_refresh_sec: 1       # Partial refresh interval in seconds
+  block_ms: 160
+
+# Diarization (Speaker Identification) Configuration
+diarize:
+  speaker_threshold: 0.75      # Cosine similarity threshold for same speaker
+
+# Console UI Configuration
+ui:
+  refresh_rate: 10             # Refresh rate in Hz
+  title: "Whisper Transcription"
+  text_style: "italic yellow"  # Rich text style for partial text
+  border_style: "green"        # Rich border style

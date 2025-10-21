@@ -1,0 +1,21 @@
+pyside6
+numpy
+sounddevice
+webrtcvad
+resemblyzer
+onnxruntime
+onnx_asr
+huggingface_hub # Used to download model
+rich
+pyyaml
+
+# PySide6>=6.6.0
+# numpy>=1.21.0
+# sounddevice>=0.4.4
+# webrtcvad>=2.0.10
+# resemblyzer>=0.1.1.dev0
+# pyyaml>=6.0
+# rich>=13.0.0
+# onnxruntime>=1.14.0
+# torch>=2.0.0
+# nemo-toolkit>=1.13.0
