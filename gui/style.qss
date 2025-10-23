@@ -1,0 +1,134 @@
+
+QWidget {
+    background-color: #f5f7fa;
+    color: #1f1f1f;
+    font-family: "Segoe UI", "Noto Sans", "Arial";
+    font-size: 14px;
+}
+
+/* Group Boxes */
+QGroupBox {
+    border: 2px solid #d0d7de;
+    border-radius: 8px;
+    margin-top: 12px;
+    font-weight: bold;
+    padding: 10px;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 5px;
+    color: #0078D7;
+    font-size: 14px;
+}
+
+/* DEVICE LABEL */
+QLabel#deviceLabel {
+    margin: 0;
+    padding-right: 2px;
+}
+
+/* Audio Device Combo */
+QComboBox#audioDeviceCombo {
+    margin-left: -2px;             /* tighten label gap */
+    padding-left: 5px;
+    padding-right: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    min-height: 26px;              /* equal with volume bar */
+    min-width: 220px;
+}
+QComboBox#audioDeviceCombo:hover {
+    border-color: #0078D7;
+}
+QComboBox#audioDeviceCombo::drop-down {
+    border-left: 1px solid #ccc;
+    width: 18px;
+}
+QComboBox#audioDeviceCombo QAbstractItemView {
+    selection-background-color: #0078D7;
+    selection-color: white;
+}
+
+/* Volume Bar */
+QProgressBar#volumeBar {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f0f0f0;
+    height: 24px;                  /* matches combo visually */
+    font-size: 12px;
+}
+QProgressBar#volumeBar::chunk {
+    border-radius: 5px;
+    background-color: #4CAF50;
+}
+
+/* BUTTONS */
+QPushButton {
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #0078D7;
+}
+QPushButton:hover {
+    background-color: #005A9E;
+}
+QPushButton:disabled {
+    background-color: #A0A0A0;
+}
+
+/* Main Buttons */
+QPushButton#startButton {
+    background-color: #4CAF50;
+}
+QPushButton#startButton:hover {
+    background-color: #45a049;
+}
+QPushButton#stopButton {
+    background-color: #f44336;
+}
+QPushButton#stopButton:hover {
+    background-color: #da190b;
+}
+QPushButton#saveButton {
+    background-color: #2196F3;
+}
+QPushButton#saveButton:hover {
+    background-color: #1976D2;
+}
+
+
+QTextEdit {
+    background-color: #fafafa;
+    border: 2px solid #d0d7de;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: "Consolas", monospace;
+    font-size: 13px;
+}
+
+/* STATUS BAR   */
+QStatusBar {
+    background-color: #f1f3f6;
+    border-top: 1px solid #d0d7de;
+    color: #333;
+}
+
+/* MAIN TITLE */
+QLabel#mainTitle {
+    font-size: 24px;        /* bigger headline */
+    font-weight: 700;
+    color: #0078D7;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    letter-spacing: 0.8px;
+}
+
+QLabel {
+    font-size: 13px;
+    color: #333;
+}
