@@ -1,0 +1,36 @@
+# Windows Instructions
+1. install python 
+2. python -m ensurepip --upgrade
+
+Terminal
+#enviroment
+py -3.11 -m venv parakeet_env
+parakeet_env\Scripts\activate
+
+
+#venv
+.venv/bin/activate
+
+#depdencies
+python -m pip install --upgrade pip
+pip install pyyaml
+pip install sounddevice
+pip install numpy
+pip install webrtcvad
+pip install rich
+pip install resemblyzer
+
+pip install onnxruntimez
+pip install onnxruntime-gpu
+pip install onnx_asr
+
+pip install PySide6
+pip install watchdog # for auto reload
+
+
+#run system
+python .\test.py 
+
+# Disable to run cpu
+export CUDA_VISIBLE_DEVICES=""
+python3 Main.py

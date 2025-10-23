@@ -1,0 +1,38 @@
+# PySide6>=6.6.0
+# numpy>=1.21.0
+# sounddevice>=0.4.4
+# webrtcvad>=2.0.10
+# resemblyzer>=0.1.1.dev0
+# pyyaml>=6.0
+# rich>=13.0.0
+# onnxruntime>=1.14.0
+# torch>=2.0.0
+# nemo-toolkit>=1.13.0
+# huggingface_hub>=0.14.1
+
+
+# Core dependencies
+PySide6==6.7.2
+numpy==2.0.1
+sounddevice==0.4.6
+webrtcvad==2.0.10
+resemblyzer==0.1.4
+pyyaml==6.0.2
+rich==13.9.2
+
+# AI/ML runtimes
+onnxruntime==1.18.0
+torch==2.3.0
+nemo-toolkit==1.21.0
+huggingface_hub==0.24.5
+
+# Compatibility fixes
+typing==3.7.4.3
+fsspec==2024.6.1
+docutils==0.21.2
+
+
+# === ONNX ASR / Parakeet pipeline ===
+onnx==1.19.1
+onnxruntime==1.23.1
+onnx-asr==0.7.0
